@@ -41,7 +41,6 @@ class MainActivity : AppCompatActivity() {
 
         initCommonTabLayout()
 
-
         initViewPager()
 
         RxPermissionUtils.createInstance(this)
@@ -50,7 +49,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initViewPager() {
         vp_main.adapter = MainVPAdapter(supportFragmentManager)
-        vp_main.addOnPageChangeListener(object : ViewPager.OnPageChangeListener{
+        vp_main.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
             override fun onPageScrollStateChanged(p0: Int) {
             }
 
@@ -59,12 +58,12 @@ class MainActivity : AppCompatActivity() {
 
             override fun onPageSelected(position: Int) {
                 ctl.currentTab = position
-                when(position){
-                    0->{
+                when (position) {
+                    0 -> {
                         showDateMenu()
                         hideFilter()
                     }
-                    1->{
+                    1 -> {
                         hideDateMenu()
                         showFilter()
                     }

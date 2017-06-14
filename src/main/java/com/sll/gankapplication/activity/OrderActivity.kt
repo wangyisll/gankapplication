@@ -30,7 +30,7 @@ class OrderActivity : AppCompatActivity() {
             override fun onMove(p0: RecyclerView?, p1: RecyclerView.ViewHolder, p2: RecyclerView.ViewHolder): Boolean {
                 Collections.swap(Constant.sCategoryList, p1.adapterPosition, p2.adapterPosition)
                 adapter?.notifyItemMoved(p1.adapterPosition, p2.adapterPosition)
-                Constant.sCategryListChanged=true
+                Constant.sCategoryListChanged =true
                 return true
             }
 

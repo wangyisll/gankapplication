@@ -17,9 +17,10 @@ object Constant {
             "福利" to R.drawable.bg_bonus_tag,
             "前端" to R.drawable.bg_js_tag,
             "休息视频" to R.drawable.bg_video_tag)
+
     var sCategoryList = mutableListOf("all", "Android", "瞎推荐", "iOS", "前端", "拓展资源", "App", "休息视频", "福利")
 
-    var sCategryListChanged = false
+    var sCategoryListChanged = false
 
     var YEAR = -1
     var MONTH = -1

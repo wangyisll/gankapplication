@@ -18,9 +18,9 @@ class MindViewHolder(view: View) : BaseViewHolder<MindData>(view) {
         val tvDate = getView(R.id.tv_date) as TextView
 
         tvTitle.text = data.title?.trim { it <= ' ' }
-        tvDate.text = data.time?:""
+        tvDate.text = data.time ?:""
 
-        tvAuthor.text = data.author?:""
+        tvAuthor.text = data.author ?:""
 
         itemView.onClick { itemView.context.startActivity<WebActivity>("URL" to data.url) }
     }

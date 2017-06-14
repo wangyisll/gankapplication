@@ -23,6 +23,7 @@ class DailyViewHolder(view: View) : BaseViewHolder<DetailsData>(view) {
         val tvType = getView(R.id.tv_type_daily) as TextView
         val tvDate = getView(R.id.tv_date_daily) as TextView
 
+
         tvTitle.text = data.desc.trim { it <= ' ' }
         tvDate.text = PublicTools.date2String(data.publishedAt.time, "yyyy.MM.dd")
 

@@ -58,6 +58,7 @@ class DailyFragment : BaseFragment(), OnDatePikerSelectListener {
                     value.results.app?.let { listData.addAll(it) }
                     value.results.bonus?.let { listData.addAll(it) }
                     value.results.ios?.let { listData.addAll(it) }
+                    value.results.js?.let { listData.addAll(it) }
                     value.results.rec?.let { listData.addAll(it) }
                     value.results.res?.let { listData.addAll(it) }
                     value.results.video?.let { listData.addAll(it) }

@@ -48,12 +48,12 @@ class SortFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        if (Constant.sCategryListChanged) {
+        if (Constant.sCategoryListChanged) {
             sortAdapter = null
             sortAdapter = MyAdapter(childFragmentManager)
             vp_sort.adapter = sortAdapter
             tab_sort.setViewPager(vp_sort)
-            Constant.sCategryListChanged = false
+            Constant.sCategoryListChanged = false
             for (i in Constant.sCategoryList.indices){
                 if (Constant.sCategoryList[i]==mCurrentTag){
                     vp_sort.setCurrentItem(i,true)
