@@ -78,8 +78,3 @@ dependencies {
 repositories {
     mavenCentral()
 }
-kotlin {
-    experimental {
-        coroutines "error"
-    }
-}
